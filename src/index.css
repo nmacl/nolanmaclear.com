@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.terminal-window {
+  width: 80%;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #fff;
+  font-family: monospace;
+}
+
+.window-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  background: #333;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: gray;
+}
+
+.control.close { background: #ff605c; }
+.control.minimize { background: #ffbd44; }
+.control.maximize { background: #00ca56; }
+
+.title {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.window-content {
+  padding: 10px;
+}
+
+.hover-image {
+  transition: all 0.1s ease-in-out;
+}
+
+.hover-image:hover {
+  content: url('../IMG_0299.JPG'); /* Change the path to your hover image */
+}
