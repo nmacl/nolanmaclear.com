@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="flex items-center justify-center text-gray-300">
-      <img src="../../Nolan.png" alt="Nolan" className="w-80 h-80 hover-image" />
+      <img src="../../IMG_0299.jpg" alt="Nolan" className="w-80 h-80 hover-image" />
       <div className="flex flex-col ml-8">
         <p className="text-lg leading-relaxed my-6">
           Hello! I'm Nolan MacLear, and I specialize in Java with a focus on server development, embedded systems, and web applications. My tech journey began in 2013 with video game modifications and has since expanded to include web development and database design. I've honed my skills through a mix of personal projects and freelance work, consistently demonstrating my commitment to problem-solving and dedication to my craft.
