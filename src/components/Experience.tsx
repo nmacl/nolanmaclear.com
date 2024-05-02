@@ -1,9 +1,4 @@
-import { useState } from 'react';
-
 const Experience = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div className="flex justify-center items-center">
