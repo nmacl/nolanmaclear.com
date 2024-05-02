@@ -46,9 +46,5 @@
 }
 
 .hover-image {
-  transition: all 0.1s ease-in-out;
-}
-
-.hover-image:hover {
   content: url('../IMG_0299.JPG'); /* Change the path to your hover image */
 }
