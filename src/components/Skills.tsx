@@ -41,10 +41,12 @@ const Skills: React.FC = () => {
   // Data for skills, easily modifiable
   const skillsData: SkillData[] = [
     { name: 'Java', level: 'expert' },
-    { name: 'Python', level: 'pro' },
-    { name: 'C++', level: 'sufficient' },
-    { name: 'React', level: 'expert' },
-    { name: 'JavaScript/TypeScript', level: 'pro'}
+    { name: 'Python', level: 'sufficient' },
+    { name: 'C++', level: 'expert' },
+    { name: 'React', level: 'pro' },
+    { name: 'JavaScript/TypeScript', level: 'pro'},
+    { name: 'Database (SQL)', level: 'pro'},
+    { name: 'Solidity', level: 'expert'}
   ];
 
   return (
