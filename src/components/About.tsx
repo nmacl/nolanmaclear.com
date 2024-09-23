@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from '../../IMG_0299.jpg'; // Ensure the path is correct or use import if using Webpack or similar bundlers
 
 const About = () => {
