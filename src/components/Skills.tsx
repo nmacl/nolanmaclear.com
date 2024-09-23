@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Define types for the props of the Skill component
 interface SkillProps {
   name: string;
@@ -19,12 +17,18 @@ const Skill: React.FC<SkillProps> = ({ name, level }) => {
   };
 
   return (
-    <div className="flex justify-between items-center p-2">
-      <span className="text-white text-lg">{name}</span>
-      <div className="flex space-x-2">
-        <span className={`px-3 py-1 rounded ${getLevelClass('sufficient')}`}>Sufficient</span>
-        <span className={`px-3 py-1 rounded ${getLevelClass('pro')}`}>Pro</span>
-        <span className={`px-3 py-1 rounded ${getLevelClass('expert')}`}>Expert</span>
+    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-2 border-b border-gray-700">
+      <span className="text-white text-base sm:text-lg mb-2 sm:mb-0">{name}</span>
+      <div className="flex flex-wrap sm:flex-nowrap space-x-0 sm:space-x-2 space-y-2 sm:space-y-0">
+        <span className={`px-3 py-1 rounded ${getLevelClass('sufficient')} text-sm sm:text-base`}>
+          Sufficient
+        </span>
+        <span className={`px-3 py-1 rounded ${getLevelClass('pro')} text-sm sm:text-base`}>
+          Pro
+        </span>
+        <span className={`px-3 py-1 rounded ${getLevelClass('expert')} text-sm sm:text-base`}>
+          Expert
+        </span>
       </div>
     </div>
   );
@@ -44,14 +48,16 @@ const Skills: React.FC = () => {
     { name: 'Python', level: 'sufficient' },
     { name: 'C++', level: 'expert' },
     { name: 'React', level: 'pro' },
-    { name: 'JavaScript/TypeScript', level: 'pro'},
-    { name: 'Database (SQL)', level: 'pro'},
-    { name: 'Solidity', level: 'expert'}
+    { name: 'JavaScript/TypeScript', level: 'pro' },
+    { name: 'Database (SQL)', level: 'pro' },
+    { name: 'Solidity', level: 'expert' }
   ];
 
   return (
-    <div className="bg-gray-800 text-white p-4 rounded-lg shadow-md">
-      <p className="text-2xl text-center mb-4">My proficiency levels in programming languages and libraries:</p>
+    <div className="bg-gray-800 text-white p-4 sm:p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+      <p className="text-xl sm:text-2xl text-center mb-4 sm:mb-6">
+        My proficiency levels in programming languages and libraries:
+      </p>
       <div>
         {skillsData.map(skill => (
           <Skill key={skill.name} name={skill.name} level={skill.level} />
