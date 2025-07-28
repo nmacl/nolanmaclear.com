@@ -1,24 +1,40 @@
 const About = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center text-gray-300 p-4 sm:p-8">
-      <img 
-        src="../../IMG_0299.jpg"
-        alt="Nolan" 
-        className="w-48 h-48 sm:w-80 sm:h-80 rounded-full object-cover hover-image transition-transform duration-300 ease-in-out transform hover:scale-105"
+    <div className="text-gray-300 p-4 sm:p-8 space-y-4 text-base sm:text-lg leading-relaxed">
+      <p>
+        I build the glue between messy systems and real business workflows. I’m finishing my CS
+        degree at UF this fall (one class left) and spent the last year as the sole dev at
+        ParsonsKellogg (CorporateGear, Gameday Gear, PK Health).
+      </p>
+      <p>
+        Stuff I shipped: a Photoshop mockup automation platform (Photoscripts + API uploaders),
+        a GPT‑driven SEO metadata generator, Excel→Admin transformers, real-time image/CDN
+        uploaders, and a pile of integrations across Business Central, MuleSoft, Salesforce,
+        ZoomInfo, Repspark, Elastic, and PromoStandards.
+      </p>
+      <p>
+        Translation: undocumented vendor APIs, legacy ERPs, scattered spreadsheets, and “can we
+        automate this?” requests turned into production systems that saved teams thousands of hours.
+      </p>
+      <p>
+        If you’re building internal platforms, automation pipelines, or e‑comm infrastructure and
+        want someone who’ll own the whole thing end‑to‑end, hit me at{" "}
+        <a href="mailto:nmaclear9@gmail.com" className="underline text-white">
+          nmaclear9@gmail.com
+        </a>.
+      </p>
+
+      {/* Image at the very bottom */}
+      <img
+          src="../../IMG_0299.jpg"
+        alt="Nolan MacLear"
+        className="w-40 h-40 sm:w-56 sm:h-56 rounded-full object-cover mx-auto mt-10 ring-2 ring-zinc-600 shadow-lg"
       />
-      <div className="flex flex-col mt-4 sm:mt-0 sm:ml-8 max-w-2xl">
-        <p className="text-base sm:text-lg leading-relaxed my-4 sm:my-6">
-          Hello! I'm Nolan MacLear, and I specialize in Java with a focus on server development, embedded systems, and web applications. My tech journey began in 2013 with video game modifications and has since expanded to include web development and database design. I've honed my skills through a mix of personal projects and freelance work, consistently demonstrating my commitment to problem-solving and dedication to my craft.
-        </p>
-        <p className="text-base sm:text-lg leading-relaxed my-4 sm:my-6">
-          Currently studying Computer Science at the University of Florida, I balance my academic pursuits with skiing, attending music festivals, and socializing. I also contribute to campus life as the social chair of my fraternity, and was the former Director of Technology for the Florida Cryptocurrency and Alternative Asset Club (FCAAC).
-        </p>
-        <p className="text-base sm:text-lg leading-relaxed my-4 sm:my-6">
-          I pride myself on my strong interpersonal skills, valuing open communication and collaboration. I'm always eager to engage in discussions and pose questions, as I believe these practices are essential for effective problem-solving and driving projects to success.
-        </p>
-      </div>
     </div>
   );
 };
 
 export default About;
+ //         src="../../IMG_0299.jpg"
+
+
